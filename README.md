@@ -1,93 +1,81 @@
-# మన ఆటలు - Mana Aatalu
+# మన ఆటలు (Mana Aatalu) - A Digital Treasury of Indian Childhood Games
 
+మన ఆటలు (Mana Aatalu) is a community-driven web application designed to document, preserve, and celebrate the traditional childhood games of India. In a world where digital entertainment is taking over, we are creating a digital treasury to ensure these vital parts of our cultural heritage are not forgotten.
 
+ About  the Project. / ప్రాజెక్ట్ గురించి
+<details>
+<summary><strong>English</strong></summary>
 
-## Getting started
+In an increasingly digital world, the rich tapestry of traditional Indian childhood games is fading from memory. There is no central, accessible platform to document the rules, regional variations, and cultural significance of these games, risking the loss of this vital part of our heritage.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Mana Aatalu is a community-powered initiative to build a comprehensive, multilingual, and multimedia digital archive of these games. We are creating a living "Kosh" (treasury) that allows anyone, anywhere, to contribute to and explore the joyful traditions of Indian play.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+</details>
 
-## Add your files
+<details>
+<summary><strong>తెలుగు</strong></summary>
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+డిజిటల్ వినోదం పెరుగుతున్న ఈ ప్రపంచంలో, మన బాల్యంలోని సాంప్రదాయ ఆటల వైభవం కనుమరుగవుతోంది. ఈ ఆటల నియమాలను, ప్రాంతీయ వైవిధ్యాలను మరియు సాంస్కృతిక ప్రాముఖ్యతను నమోదు చేయడానికి ఒకే వేదిక లేదు. దీనివల్ల మన వారసత్వంలోని ఈ ముఖ్యమైన భాగాన్ని కోల్పోయే ప్రమాదం ఉంది.
 
+మన ఆటలు అనేది ఈ ఆటలను భద్రపరచడానికి ప్రజలచే, ప్రజల కోసం నిర్మించబడిన ఒక డిజిటల్ నిధి. ఇది ఎవరైనా, ఎక్కడినుండైనా మన ఆటల సంప్రదాయాలను పంచుకోవడానికి మరియు తెలుసుకోవడానికి వీలు కల్పిస్తుంది.
+
+</details>
+
+  Features / ఫీచర్లు
+- **User Authentication**: Secure login and signup system to manage contributions.  
+- **Multimedia Contributions**: Users can upload game rules, photos, audio clips of songs/chants, and short videos of gameplay.  
+- **Explore the Archive**: A public gallery to discover games from all across India, with search and filter capabilities.  
+- **Personal Dashboard**: A dedicated space for users to view and manage their own contributions.  
+ 
+
+- **వినియోగదారుల ప్రమాణీకరణ**: సురక్షితమైన లాగిన్ మరియు సైన్అప్ వ్యవస్థ.  
+- **మల్టీమీడియా సహాయాలు**: వినియోగదారులు ఆటల నియమాలు, ఫోటోలు, ఆడియో క్లిప్‌లు మరియు వీడియోలను అప్‌లోడ్ చేయవచ్చు.  
+- **ఆర్కైవ్‌ను అన్వేషించండి**: భారతదేశం నలుమూలల నుండి ఆటలను కనుగొనడానికి ఒక పబ్లిక్ గ్యాలరీ.  
+- **వ్యక్తిగత డాష్‌బోర్డ్**: వినియోగదారులు తమ సహాయాలను వీక్షించడానికి మరియు నిర్వహించడానికి ఒక ప్రత్యేక స్థలం.  
+- **ద్విభాషా ఇంటర్‌ఫేస్**: ఇంగ్లీష్ మరియు తెలుగు భాషలకు పూర్తి మద్దతు.  
+
+  Tech Stack / టెక్ స్టాక్
+- **Frontend**: Streamlit  
+- **Backend API**: Swecha Corpus API  
+- **Core Libraries**: requests, pandas  
+
+ Getting Started / ప్రారంభించడం ఎలా  
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+- Python 3.8 or higher  
+- An account on the Swecha Corpus Platform  
+
+### Installation
+Clone the repository:
+```bash
+git clone (https://code.swecha.org/nikhilanand/mana-aatalu.git)
+cd mana-aatalu
 ```
-cd existing_repo
-git remote add origin https://code.swecha.org/nikhilanand/mana-aatalu.git
-git branch -M main
-git push -uf origin main
+
+Create a virtual environment and activate it:
+```bash
+uv venv
+source .venv/bin/activate 
 ```
 
-## Integrate with your tools
+Install the required packages:
+```bash
+uv sync
+```
 
-- [ ] [Set up project integrations](https://code.swecha.org/nikhilanand/mana-aatalu/-/settings/integrations)
+### Running the Application
+Launch the Streamlit app:
+```bash
+streamlit run app.py
+```
 
-## Collaborate with your team
+Open your web browser and navigate to `http://localhost:8501`.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+🤝 How to Contribute / ఎలా సహాయం చేయాలి  
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-## Test and Deploy
+Please see the CONTRIBUTING.md file for details on our code of conduct and the process for submitting pull requests.
 
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+📄 License / లైసెన్స్  
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
